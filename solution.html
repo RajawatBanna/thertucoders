@@ -11,6 +11,49 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Float four columns side by side */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+    }
+    
+    /* Remove extra left and right margins, due to padding */
+    .row {margin: 0 -5px;}
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -35,26 +78,27 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <img style="width: 100px; border-radius: 50%;" src="logo_dark.jpg" alt=""> 
-  <h1>The RTU Coders</h1> 
-  <p>Coding Community of UD RTU Kota</p>
+<div style="padding: 40px 20px;" class="jumbotron text-center">
+  <h1>CSES</h1> 
+  <p>Solution with Quick Explanation</p>
 </div>
 <div id="about" class="container-fluid">
+    <center><h1><b>Introductory Problems</b></h1></center>
     <div class="row">
-      <div class="col-sm-8">
-        <h2>About Us</h2>
-        <p>The RTU Coders is Coding Community of University Department, Rajasthan Technical University Kota.
-            who by passion and by choice learn, share, grow, and code together to build an environment of coding enthusiasts in campus. 
-            <br><strong>Mission: </strong><p> Create an impact by building a strong programming community from problem solvers to problem setters and get placed in multinational companies. Crack Google Competitions, Facebook Hackercup, ICPC etc. </p>
-            <strong>Vision: </strong><p>Our vision is to make learning competitive programming accessible for students of RTU.</p>
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-signal logo"></span>
-      </div>
+        <div class="column">
+            <div class="card"><a target="__blank" href="https://cses.fi/paste/b0efc780e89116881896bf/">Wierd Algorithm</a></div>
+        </div>
+        <div class="column">
+            <div class="card"><a target="__blank" href="https://cses.fi/paste/c45f5720d65397d41896cf/">Missing Number</a></div>
+        </div>
+        <div class="column">
+            <div class="card"><a target="__blank" href="https://cses.fi/paste/79385a46cb9528f6189742/">Repitions</a></div>
+        </div>
+        <div class="column">
+            <div class="card"><a target="__blank" href="https://cses.fi/paste/2eef882f62dfb5111897b0/">Inreasing Array</a></div>
+        </div>
     </div>
   </div>
-<script src="scripts.js"></script>
+<!-- <script src="scripts.js"></script> -->
 </body>
 </html>
